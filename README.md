@@ -4,49 +4,55 @@ A dependency-free local webpage for filtering Deadlock heroes and editing their 
 
 ## Files
 
-- `index.html` — page structure
-- `styles.css` — visual design
-- `app.js` — filtering, editing, import/export and localStorage
-- `heroes.json` — all hero metadata and explicit portrait URLs
+* `index.html` - page structure
+* `styles.css` - visual design
+* `app.js` - filtering, editing, import/export, and localStorage
+* `heroes.json` - hero metadata and explicit portrait URLs
 
-## Run it
+## Run It
 
 The most reliable method is a tiny local HTTP server because browsers may block `fetch("heroes.json")` when `index.html` is opened directly with `file://`.
 
-If Python is installed:
+If Python is installed, run this command from this folder:
 
-    python -m http.server 8000
+```sh
+python -m http.server 8000
+```
 
-Run that command from this folder, then open:
+Then open:
 
-    http://localhost:8000
+```text
+http://localhost:8000
+```
 
 No packages or build step are required.
 
-## Filtering logic
+## Filtering Logic
 
-Within each category, selected filters are OR:
+Heroes must match every selected filter to be highlighted.
 
-    Tank OR Brawler
+For example, selecting `Tank` highlights heroes tagged as `Tank`. Selecting `Tank` plus `Ganker` only highlights heroes tagged with both `Tank` and `Ganker`. Adding `Melee` further narrows the highlighted heroes to those with all three tags.
 
-Across categories, categories are AND:
+This same AND logic applies across all active filters, including multiple selections inside the same category. Heroes that do not match remain visible but are grayscale and faded.
 
-    (Tank OR Brawler)
-    AND
-    (Sustain OR Healer)
-    AND
-    (Long OR Extreme)
-    AND
-    (Difficulty 2 OR Difficulty 3)
+## Filter Categories
 
-Heroes that fail the combined criteria remain visible but are grayscale and faded.
+The current filter categories are:
 
-## Editing heroes
+* `Roles`
+* `Characteristics`
+* `Range`
+* `Scaling focus` - `Early`, `Mid`, `Late`, `Consistent`
+* `mechanics` - `1` through `5`
+* `Aim` - `1` through `5`
+* `decision-making` - `1` through `5`
+
+## Editing Heroes
 
 1. Click `Edit mode`.
 2. Click `Edit` on a hero.
-3. Toggle roles, characteristics, range, objective, and power curve tags.
-4. Select exactly one difficulty.
+3. Toggle roles, characteristics, range, and scaling focus tags.
+4. Select one value each for mechanics, Aim, and decision-making.
 5. Click `Save hero`.
 
 Edits are stored in browser `localStorage`, so they survive reopening the page in the same browser.
@@ -55,42 +61,40 @@ Use `Export JSON` to create a portable `heroes.json`. Replace the project JSON w
 
 `Import JSON` loads a previously exported data file.
 
-## Wiki tags
+## Wiki Tags
 
-The current baseline stores each matched hero's source tags from Deadlock Wiki in `wikiTags`.
-Those tags are translated into the app's filter fields where they clearly match the available
-filters. Tags that do not map cleanly are preserved in `wikiTags` but not used as filters.
+The current baseline stores each matched hero's source tags from Deadlock Wiki in `wikiTags`. Those tags are translated into the app's filter fields where they clearly match the available filters. Tags that do not map cleanly are preserved in `wikiTags` but not used as filters.
 
-The wiki currently lists 32 available heroes. Extra local heroes that are not on that current
-roster are kept in `heroes.json`, but their existing filter data is not replaced by wiki data.
+Extra local heroes that are not on the current wiki roster are kept in `heroes.json`, but their existing filter data is not replaced by wiki data.
 
-## Adding a filter
+## Adding A Filter
 
-The filter categories are defined in `heroes.json`:
+The visible filter categories are defined in `CONFIG.filterGroups` and `CONFIG.defaultFilterGroups` in `app.js`. The exported `heroes.json` also includes `filterGroups` for portability.
 
-    "filterGroups": {
-      "roles": ["Tank", "Brawler", "Carry", "..."],
-      "characteristics": ["Disabler", "Stunner", "..."],
-      "range": ["Melee", "Short", "Medium", "Long", "Extreme"],
-      "objective": ["Lane Pressure", "Split Push", "..."],
-      "powerCurve": ["Early Game", "Mid Game", "Late Game", "Scaling"],
-      "difficulty": [1, 2, 3, 4, 5]
-    }
+To add a list-based filter category, add it to `CONFIG.filterGroups`:
 
-Add another category there and add the corresponding property to each hero. For example:
+```js
+lanes: { label: "Lane", field: "lanes" }
+```
 
-    "lanes": ["Solo", "Duo"]
+Then add the available values to `CONFIG.defaultFilterGroups`:
 
-Then add this one line to `CONFIG.filterGroups` in `app.js`:
+```js
+lanes: ["Solo", "Duo"]
+```
 
-    lanes: { label: "Lane", field: "lanes" }
+Each hero should also include the matching field:
 
-The existing rendering and filtering code will automatically create the buttons and apply the same OR-within / AND-between behavior.
+```json
+"lanes": ["Solo"]
+```
+
+For number-based single-value filters, add `type: "number"` in `CONFIG.filterGroups`.
+
+The existing rendering and filtering code will automatically create the buttons and require heroes to match every selected value.
 
 ## Portraits
 
 Portrait URLs are stored explicitly in `heroes.json` and point to Deadlock Wiki's file redirect endpoint. This means the app does not need to scrape the wiki at runtime.
 
 If a wiki image filename changes, update only that hero's `portrait` field.
-
-The current wiki roster is a living source and currently lists 44 playable heroes; update `heroes.json` when the roster changes.

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Deadlock Hero Filter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <h1>Deadlock Heroes</h1>
+      <p class="subtitle">Hero filter &amp; tag editor</p>
+    </div>
+    <div class="header-actions">
+      <button id="editModeBtn" class="button">Edit mode</button>
+      <button id="resetFiltersBtn" class="button secondary">Reset filters</button>
+      <button id="importBtn" class="button secondary">Import JSON</button>
+      <button id="exportBtn" class="button secondary">Export JSON</button>
+      <input id="importInput" type="file" accept=".json,application/json" hidden>
+    </div>
+  </header>
+
+  <main>
+    <section class="filters" aria-label="Hero filters">
+      <div class="filter-header">
+        <div>
+          <h2>Filters</h2>
+          <p>Heroes must match every active filter.</p>
+        </div>
+        <strong id="matchCount">44 / 44</strong>
+      </div>
+      <div id="filterGroups"></div>
+    </section>
+
+    <section class="legend">
+      <span class="legend-item"><i class="legend-dot active-dot"></i>Matches all active filters</span>
+      <span class="legend-item"><i class="legend-dot inactive-dot"></i>Does not match</span>
+      <span id="storageStatus" class="storage-status"></span>
+    </section>
+
+    <section id="heroGrid" class="hero-grid" aria-live="polite"></section>
+  </main>
+
+  <dialog id="editDialog">
+    <form method="dialog" id="editForm">
+      <div class="dialog-header">
+        <div>
+          <h2 id="editTitle">Edit hero</h2>
+          <p>Changes are saved in this browser. Use Export JSON to make them portable.</p>
+        </div>
+        <button value="cancel" class="icon-button" aria-label="Close">×</button>
+      </div>
+      <div id="editFields"></div>
+      <div class="dialog-actions">
+        <button value="cancel" class="button secondary">Cancel</button>
+        <button id="saveHeroBtn" value="default" class="button">Save hero</button>
+      </div>
+    </form>
+  </dialog>
+
+  <template id="heroTemplate">
+    <article class="hero-card">
+      <div class="portrait-wrap">
+        <img class="hero-portrait" alt="" loading="lazy">
+        <div class="match-badge">MATCH</div>
+      </div>
+      <div class="hero-info">
+        <h3 class="hero-name"></h3>
+        <div class="hero-meta"></div>
+      </div>
+      <button class="edit-hero-button" type="button">Edit</button>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

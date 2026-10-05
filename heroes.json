@@ -1,0 +1,952 @@
+{
+  "schemaVersion": 1,
+  "source": "https://deadlock.wiki/Heroes",
+  "filterGroups": {
+    "roles": [
+      "Tank",
+      "Brawler",
+      "Carry",
+      "Support",
+      "Assassin",
+      "Ganker",
+      "Initiator",
+      "Duelist",
+      "Teamfighter",
+      "Disruptor",
+      "Defender",
+      "Harasser",
+      "Split Pusher",
+      "Siege",
+      "Peeler"
+    ],
+    "characteristics": [
+      "Disabler",
+      "Stunner",
+      "Slow",
+      "Burst Damage",
+      "Sustained Damage",
+      "AoE",
+      "Single Target",
+      "DoT",
+      "Execute",
+      "Sustain",
+      "Healer",
+      "Shield",
+      "Lifesteal",
+      "Escape",
+      "Chase",
+      "High Mobility",
+      "Stealth",
+      "Map Control",
+      "Area Denial",
+      "Ally Buff",
+      "Enemy Debuff",
+      "Reposition"
+    ],
+    "range": [
+      "Melee",
+      "Short",
+      "Medium",
+      "Long",
+      "Extreme"
+    ],
+    "scalingFocus": [
+      "Early",
+      "Mid",
+      "Late",
+      "Consistent"
+    ],
+    "mechanics": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "aim": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "decisionMaking": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "heroes": [
+    {
+      "id": "abrams",
+      "name": "Abrams",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Abrams%20card.png",
+      "roles": [
+        "Tank",
+        "Brawler"
+      ],
+      "characteristics": [],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 2,
+      "aim": 2,
+      "decisionMaking": 2,
+      "wikiTags": [
+        "Tank",
+        "Brawler",
+        "Bull-Headed"
+      ]
+    },
+    {
+      "id": "apollo",
+      "name": "Apollo",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Apollo%20card.png",
+      "roles": [
+        "Carry",
+        "Teamfighter"
+      ],
+      "characteristics": [
+        "Escape",
+        "Burst Damage"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 3,
+      "aim": 3,
+      "decisionMaking": 3,
+      "wikiTags": []
+    },
+    {
+      "id": "baba",
+      "name": "Baba",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Baba%20card.png",
+      "roles": [
+        "Brawler",
+        "Carry"
+      ],
+      "characteristics": [
+        "Sustain",
+        "Escape"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 3,
+      "aim": 3,
+      "decisionMaking": 3,
+      "wikiTags": []
+    },
+    {
+      "id": "bebop",
+      "name": "Bebop",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Bebop%20card.png",
+      "roles": [],
+      "characteristics": [
+        "Reposition",
+        "AoE",
+        "Burst Damage"
+      ],
+      "range": [
+        "Melee"
+      ],
+      "scalingFocus": [],
+      "mechanics": 2,
+      "aim": 2,
+      "decisionMaking": 2,
+      "wikiTags": [
+        "Hook",
+        "Bomb",
+        "Punch"
+      ]
+    },
+    {
+      "id": "billy",
+      "name": "Billy",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Billy%20card.png",
+      "roles": [],
+      "characteristics": [],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 2,
+      "aim": 2,
+      "decisionMaking": 2,
+      "wikiTags": [
+        "Punk",
+        "Chaotic",
+        "G.O.A.T."
+      ]
+    },
+    {
+      "id": "calico",
+      "name": "Calico",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Calico%20card.png",
+      "roles": [],
+      "characteristics": [
+        "Escape",
+        "High Mobility",
+        "Burst Damage"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 3,
+      "aim": 3,
+      "decisionMaking": 3,
+      "wikiTags": [
+        "Tricksy",
+        "Slippery",
+        "Burst Damage"
+      ]
+    },
+    {
+      "id": "celeste",
+      "name": "Celeste",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Celeste%20card.png",
+      "roles": [
+        "Support",
+        "Teamfighter"
+      ],
+      "characteristics": [
+        "Healer",
+        "Disabler"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 4,
+      "aim": 4,
+      "decisionMaking": 4,
+      "wikiTags": []
+    },
+    {
+      "id": "deadman-danny",
+      "name": "Deadman Danny",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Deadman%20Danny%20card.png",
+      "roles": [
+        "Carry",
+        "Ganker"
+      ],
+      "characteristics": [
+        "Burst Damage",
+        "Escape"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 3,
+      "aim": 3,
+      "decisionMaking": 3,
+      "wikiTags": []
+    },
+    {
+      "id": "the-doorman",
+      "name": "The Doorman",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/The%20Doorman%20card.png",
+      "roles": [],
+      "characteristics": [
+        "Disabler",
+        "Map Control"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 3,
+      "aim": 3,
+      "decisionMaking": 3,
+      "wikiTags": [
+        "Disorienting",
+        "Map Control",
+        "Mind Games"
+      ]
+    },
+    {
+      "id": "drifter",
+      "name": "Drifter",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Drifter%20card.png",
+      "roles": [],
+      "characteristics": [
+        "Chase"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 3,
+      "aim": 3,
+      "decisionMaking": 3,
+      "wikiTags": [
+        "Stalker",
+        "Bloodthirsty",
+        "Cruel"
+      ]
+    },
+    {
+      "id": "dynamo",
+      "name": "Dynamo",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Dynamo%20card.png",
+      "roles": [
+        "Initiator"
+      ],
+      "characteristics": [],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 2,
+      "aim": 2,
+      "decisionMaking": 2,
+      "wikiTags": [
+        "Teamplay",
+        "Initiator",
+        "Clutch"
+      ]
+    },
+    {
+      "id": "graves",
+      "name": "Graves",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Graves%20card.png",
+      "roles": [
+        "Brawler",
+        "Carry"
+      ],
+      "characteristics": [
+        "Sustain",
+        "Ganker"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 3,
+      "aim": 3,
+      "decisionMaking": 3,
+      "wikiTags": []
+    },
+    {
+      "id": "grey-talon",
+      "name": "Grey Talon",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Grey%20Talon%20card.png",
+      "roles": [],
+      "characteristics": [
+        "Chase",
+        "Area Denial"
+      ],
+      "range": [
+        "Long"
+      ],
+      "scalingFocus": [],
+      "mechanics": 3,
+      "aim": 3,
+      "decisionMaking": 3,
+      "wikiTags": [
+        "Precision",
+        "Hunter",
+        "Area Denial"
+      ]
+    },
+    {
+      "id": "haze",
+      "name": "Haze",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Haze%20card.png",
+      "roles": [
+        "Assassin"
+      ],
+      "characteristics": [
+        "Stealth"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 3,
+      "aim": 3,
+      "decisionMaking": 3,
+      "wikiTags": [
+        "Assassin",
+        "Stealthy",
+        "Lethal"
+      ]
+    },
+    {
+      "id": "holliday",
+      "name": "Holliday",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Holliday%20card.png",
+      "roles": [],
+      "characteristics": [
+        "AoE",
+        "Burst Damage",
+        "Chase"
+      ],
+      "range": [
+        "Long"
+      ],
+      "scalingFocus": [],
+      "mechanics": 3,
+      "aim": 3,
+      "decisionMaking": 3,
+      "wikiTags": [
+        "Crackshot",
+        "Explosive",
+        "Apprehender"
+      ]
+    },
+    {
+      "id": "infernus",
+      "name": "Infernus",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Infernus%20card.png",
+      "roles": [],
+      "characteristics": [
+        "DoT",
+        "AoE",
+        "Burst Damage"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 2,
+      "aim": 2,
+      "decisionMaking": 2,
+      "wikiTags": [
+        "Arsonist",
+        "Explosive",
+        "Burn Rubber"
+      ]
+    },
+    {
+      "id": "ivy",
+      "name": "Ivy",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Ivy%20card.png",
+      "roles": [
+        "Disruptor"
+      ],
+      "characteristics": [],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 2,
+      "aim": 2,
+      "decisionMaking": 2,
+      "wikiTags": [
+        "Team-up",
+        "Disruptor",
+        "Rock Solid"
+      ]
+    },
+    {
+      "id": "kelvin",
+      "name": "Kelvin",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Kelvin%20card.png",
+      "roles": [
+        "Defender",
+        "Peeler"
+      ],
+      "characteristics": [
+        "Slow"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 2,
+      "aim": 2,
+      "decisionMaking": 2,
+      "wikiTags": [
+        "Protector",
+        "Explorer",
+        "Ice Cold"
+      ]
+    },
+    {
+      "id": "lady-geist",
+      "name": "Lady Geist",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Lady%20Geist%20card.png",
+      "roles": [],
+      "characteristics": [
+        "Lifesteal"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 3,
+      "aim": 3,
+      "decisionMaking": 3,
+      "wikiTags": [
+        "Lifesteal",
+        "Self Damage",
+        "Fatale"
+      ]
+    },
+    {
+      "id": "lash",
+      "name": "Lash",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Lash%20card.png",
+      "roles": [
+        "Initiator"
+      ],
+      "characteristics": [
+        "High Mobility"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 4,
+      "aim": 4,
+      "decisionMaking": 4,
+      "wikiTags": [
+        "Initiator",
+        "High Flying",
+        "Arrogant"
+      ]
+    },
+    {
+      "id": "mcginnis",
+      "name": "McGinnis",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/McGinnis%20card.png",
+      "roles": [
+        "Support",
+        "Disruptor"
+      ],
+      "characteristics": [],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 2,
+      "aim": 2,
+      "decisionMaking": 2,
+      "wikiTags": [
+        "Inventor",
+        "Support",
+        "Disruption"
+      ]
+    },
+    {
+      "id": "mina",
+      "name": "Mina",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Mina%20card.png",
+      "roles": [
+        "Harasser"
+      ],
+      "characteristics": [
+        "High Mobility"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 4,
+      "aim": 4,
+      "decisionMaking": 4,
+      "wikiTags": [
+        "Harasser",
+        "Nimble",
+        "Vexing"
+      ]
+    },
+    {
+      "id": "mirage",
+      "name": "Mirage",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Mirage%20card.png",
+      "roles": [
+        "Defender",
+        "Peeler"
+      ],
+      "characteristics": [],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 3,
+      "aim": 3,
+      "decisionMaking": 3,
+      "wikiTags": [
+        "Bodyguard",
+        "Traveller",
+        "Focused"
+      ]
+    },
+    {
+      "id": "mo-and-krill",
+      "name": "Mo & Krill",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Mo%20%26%20Krill%20card.png",
+      "roles": [
+        "Initiator"
+      ],
+      "characteristics": [],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 2,
+      "aim": 2,
+      "decisionMaking": 2,
+      "wikiTags": [
+        "Tag-Team",
+        "Initiator",
+        "Burrower"
+      ]
+    },
+    {
+      "id": "nurse-harrow",
+      "name": "Nurse Harrow",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Nurse%20Harrow%20card.png",
+      "roles": [
+        "Support",
+        "Teamfighter"
+      ],
+      "characteristics": [
+        "Healer",
+        "Disabler"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 4,
+      "aim": 4,
+      "decisionMaking": 4,
+      "wikiTags": []
+    },
+    {
+      "id": "paige",
+      "name": "Paige",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Paige%20card.png",
+      "roles": [
+        "Defender",
+        "Peeler"
+      ],
+      "characteristics": [],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 4,
+      "aim": 4,
+      "decisionMaking": 4,
+      "wikiTags": [
+        "Helpful",
+        "Protector",
+        "Booksmart"
+      ]
+    },
+    {
+      "id": "paradox",
+      "name": "Paradox",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Paradox%20card.png",
+      "roles": [
+        "Disruptor"
+      ],
+      "characteristics": [],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 5,
+      "aim": 5,
+      "decisionMaking": 5,
+      "wikiTags": [
+        "Calculated",
+        "Disruptor",
+        "Tactician"
+      ]
+    },
+    {
+      "id": "pocket",
+      "name": "Pocket",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Pocket%20card.png",
+      "roles": [],
+      "characteristics": [
+        "Burst Damage"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 4,
+      "aim": 4,
+      "decisionMaking": 4,
+      "wikiTags": [
+        "Trickster",
+        "Burst Damage",
+        "Frogs"
+      ]
+    },
+    {
+      "id": "rat-king",
+      "name": "Rat King",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Rat%20King%20card.png",
+      "roles": [
+        "Carry",
+        "Split Pusher"
+      ],
+      "characteristics": [
+        "Burst Damage",
+        "Sustain"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 3,
+      "aim": 3,
+      "decisionMaking": 3,
+      "wikiTags": []
+    },
+    {
+      "id": "rem",
+      "name": "Rem",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Rem%20card.png",
+      "roles": [
+        "Carry",
+        "Ganker"
+      ],
+      "characteristics": [
+        "Escape",
+        "Burst Damage"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 3,
+      "aim": 3,
+      "decisionMaking": 3,
+      "wikiTags": []
+    },
+    {
+      "id": "seven",
+      "name": "Seven",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Seven%20card.png",
+      "roles": [],
+      "characteristics": [
+        "Area Denial"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 2,
+      "aim": 2,
+      "decisionMaking": 2,
+      "wikiTags": [
+        "High Voltage",
+        "Merciless",
+        "Area Denial"
+      ]
+    },
+    {
+      "id": "shiv",
+      "name": "Shiv",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Shiv%20card.png",
+      "roles": [],
+      "characteristics": [
+        "DoT"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 4,
+      "aim": 4,
+      "decisionMaking": 4,
+      "wikiTags": [
+        "Rage",
+        "Bleed",
+        "Repeat"
+      ]
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Silver%20card.png",
+      "roles": [
+        "Carry",
+        "Ganker"
+      ],
+      "characteristics": [
+        "Escape",
+        "Burst Damage"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 3,
+      "aim": 3,
+      "decisionMaking": 3,
+      "wikiTags": []
+    },
+    {
+      "id": "sinclair",
+      "name": "Sinclair",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Sinclair%20card.png",
+      "roles": [],
+      "characteristics": [],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 4,
+      "aim": 4,
+      "decisionMaking": 4,
+      "wikiTags": [
+        "Trickster",
+        "Copycat",
+        "Versatile"
+      ]
+    },
+    {
+      "id": "solomon",
+      "name": "Solomon",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Solomon%20card.png",
+      "roles": [
+        "Tank",
+        "Brawler"
+      ],
+      "characteristics": [
+        "Sustain",
+        "Disabler"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 2,
+      "aim": 2,
+      "decisionMaking": 2,
+      "wikiTags": []
+    },
+    {
+      "id": "venator",
+      "name": "Venator",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Venator%20card.png",
+      "roles": [
+        "Brawler",
+        "Ganker"
+      ],
+      "characteristics": [
+        "Disabler",
+        "Escape"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 4,
+      "aim": 4,
+      "decisionMaking": 4,
+      "wikiTags": []
+    },
+    {
+      "id": "victor",
+      "name": "Victor",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Victor%20card.png",
+      "roles": [],
+      "characteristics": [],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 2,
+      "aim": 2,
+      "decisionMaking": 2,
+      "wikiTags": [
+        "You",
+        "Can't",
+        "Kill Me"
+      ]
+    },
+    {
+      "id": "vindicta",
+      "name": "Vindicta",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Vindicta%20card.png",
+      "roles": [],
+      "characteristics": [
+        "Single Target",
+        "Burst Damage"
+      ],
+      "range": [
+        "Extreme"
+      ],
+      "scalingFocus": [],
+      "mechanics": 2,
+      "aim": 2,
+      "decisionMaking": 2,
+      "wikiTags": [
+        "Sniper",
+        "Soaring",
+        "One Shot Kill"
+      ]
+    },
+    {
+      "id": "violet",
+      "name": "Violet",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Violet%20card.png",
+      "roles": [
+        "Carry",
+        "Ganker"
+      ],
+      "characteristics": [
+        "Escape",
+        "Burst Damage"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 3,
+      "aim": 3,
+      "decisionMaking": 3,
+      "wikiTags": []
+    },
+    {
+      "id": "viscous",
+      "name": "Viscous",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Viscous%20card.png",
+      "roles": [
+        "Disruptor"
+      ],
+      "characteristics": [
+        "Escape",
+        "Slow"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 4,
+      "aim": 4,
+      "decisionMaking": 4,
+      "wikiTags": [
+        "Evasive",
+        "Disruptor",
+        "Gooey"
+      ]
+    },
+    {
+      "id": "vyper",
+      "name": "Vyper",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Vyper%20card.png",
+      "roles": [],
+      "characteristics": [
+        "Escape",
+        "High Mobility"
+      ],
+      "range": [
+        "Medium"
+      ],
+      "scalingFocus": [],
+      "mechanics": 4,
+      "aim": 4,
+      "decisionMaking": 4,
+      "wikiTags": [
+        "Gunner",
+        "Slippery",
+        "Rat-a-Tat"
+      ]
+    },
+    {
+      "id": "warden",
+      "name": "Warden",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Warden%20card.png",
+      "roles": [
+        "Initiator"
+      ],
+      "characteristics": [],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 2,
+      "aim": 2,
+      "decisionMaking": 2,
+      "wikiTags": [
+        "Initiator",
+        "Fearless",
+        "One Man Army"
+      ]
+    },
+    {
+      "id": "wraith",
+      "name": "Wraith",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Wraith%20card.png",
+      "roles": [
+        "Duelist"
+      ],
+      "characteristics": [],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 2,
+      "aim": 2,
+      "decisionMaking": 2,
+      "wikiTags": [
+        "Duelist",
+        "Isolator",
+        "Telekinetic"
+      ]
+    },
+    {
+      "id": "yamato",
+      "name": "Yamato",
+      "portrait": "https://deadlock.wiki/Special:Redirect/file/Yamato%20card.png",
+      "roles": [],
+      "characteristics": [
+        "High Mobility",
+        "Chase"
+      ],
+      "range": [],
+      "scalingFocus": [],
+      "mechanics": 4,
+      "aim": 4,
+      "decisionMaking": 4,
+      "wikiTags": [
+        "Relentless",
+        "Acrobatics",
+        "Pursuer"
+      ]
+    }
+  ]
+}
